@@ -1370,12 +1370,11 @@ pre .storage {
 	height: 450px;
 	width: 50%;
 }
-.home-template .site-header {
+.home-template .site-title{height: 30px;}
+.home-template .site-title a{
 	display: none;
 }
-.home-template{
-	margin-top: 30px;
-}
+
 
 .grid-item:nth-child(3n+1),
 .home-template .grid-item:nth-child(3n+3) {
