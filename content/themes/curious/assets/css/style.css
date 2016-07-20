@@ -1438,6 +1438,9 @@ pre .storage {
 .cover.hero {
 	height: 600px;
 	margin-bottom: 30px;
+	background-image: url('../images/building_abigwonderful.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
 }
 
 .cover.page-header {
@@ -2178,6 +2181,13 @@ pre .storage {
 }
 
 @media only screen and (max-width: 980px) {
+	.cover.hero {
+		background-image: url('../images/building_abigwonderful.png');
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-size: 35%;
+	}
+
 	blockquote,
 	.full-width {
 		margin-left: 0;
@@ -2364,6 +2374,7 @@ pre .storage {
 }
 
 @media only screen and (max-width: 600px) {
+
 	.author-box .author-avatar {
 		display: block;
 		margin-bottom: 30px;
@@ -2431,6 +2442,9 @@ pre .storage {
 		padding-bottom: 30px;
 	}
 
+	.cover.hero {
+		background-position: center bottom;
+	}
 	.inner-wide,
 	.inner,
 	.author-box {

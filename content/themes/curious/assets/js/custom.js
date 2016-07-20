@@ -13,7 +13,9 @@
 
 		// Scroll to content
 		$('.cover .scroll-down').on('click', function(e) {
-			$('html, body').animate({'scrollTop': $('.cover').height()}, 800);
+			var pageHeight = $(this).parents('.hero').length ? $('.cover').height() + 80 : $('.cover').height();
+			$('html, body').animate({'scrollTop': pageHeight}, 800);
+			pag
 			e.preventDefault();
 		});
 
@@ -31,6 +33,11 @@
 
 		// Sidebar
 		$('.sidebar-toggle, .overlay').on('click', function(e){
+			$('body').toggleClass('sidebar-opened');
+			e.preventDefault();
+		});
+		// sidebar from footer
+		$('.footer-toggle').on('click', function(e){
 			$('body').toggleClass('sidebar-opened');
 			e.preventDefault();
 		});
